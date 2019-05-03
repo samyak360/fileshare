@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fileshare-share files across linux or windows pc</title>
+	<link rel="stylesheet" type="text/css" href="fs.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	
+</head>
+<body id="randcolor">
+<a href="fs.html"><img src="608940.png" alt="logo"></a>
+<div class="maindiv">
+	<div id=forbtn>
+		<button class ="button" onclick="areachange()">Send</button><br>
+		<button class ="button">Receive</button>
+	</div>
+</div>
+
+<div id="drop-area1" class="animated rollIn">
+	<br><br><br>
+<form class="my-form">
+<label>send file to ip address: </label>
+<input type="text" name="ip" id="ip">
+<br><br>
+<input type="submit" class="button" value="send request">
+</form>
+</div>
+
+<div id="drop-area" >
+  <form class="my-form">
+    <img src="down.png" alt="upload here" height="150px" width="150px" style="opacity: .2">
+    <h4>Drag and drop files</h4>
+    <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+    <label class="button2" for="fileElem">Browse files</label>
+  </form>
+  <div id="gallery"></div>
+</div>
+
+<footer>
+	<div class="line"></div>
+	
+</footer>
+<script type="text/javascript" src="fs.js"></script>
+</body>
+</html>
